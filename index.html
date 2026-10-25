@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KasaFON — Kişisel bütçe</title>
+    <meta
+      name="description"
+      content="KasaFON gelir, gider, borç ve hedeflerini tek yerde toplar. Banka bağlantısı salt okunurdur; uygulama para transferi veya ödeme yapmaz."
+    />
+    <meta name="theme-color" content="#07111c" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#icerik" data-i18n="skip">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#ust" aria-label="KasaFON">
+          <img src="assets/wordmark.png" alt="KasaFON" width="150" height="28" />
+        </a>
+        <nav class="nav" data-i18n-aria="nav.label" aria-label="Sayfa">
+          <a href="#guven" data-i18n="nav.trust">Güven</a>
+          <a href="#ozellikler" data-i18n="nav.features">Özellikler</a>
+          <a href="#planlar" data-i18n="nav.plans">Planlar</a>
+          <a href="#sss" data-i18n="nav.faq">SSS</a>
+        </nav>
+        <div class="lang" role="group" data-i18n-aria="lang.label">
+          <button type="button" data-set-lang="tr" aria-pressed="true">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="icerik">
+      <section class="hero" id="ust">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.kicker">Kişisel bütçe</p>
+            <h1>
+              <span data-i18n="hero.title">Finansını sadece takip etme.</span>
+              <span class="accent" data-i18n="hero.titleEm">Yönet.</span>
+            </h1>
+            <p class="lead" data-i18n="hero.lead">
+              Gelir, gider, borç ve hedefler tek uygulamada. Banka bağlantısı salt okunurdur;
+              KasaFON para transferi veya ödeme yapmaz.
+            </p>
+            <div class="store-row">
+              <button type="button" class="store" disabled>
+                <span class="store-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path
+                      fill="currentColor"
+                      d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-.1 2.9-2.3c.7-1 1.2-2 1.5-3.1-3.9-1.5-3.8-5.4-3.8-5.2zM14.3 6.2c.6-.8 1.1-1.9.9-3-1 .1-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.5 2.9-1.4z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <small data-i18n="store.soon">Yakında</small>
+                  <strong>App Store</strong>
+                </span>
+              </button>
+              <button type="button" class="store" disabled>
+                <span class="store-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16">
+                    <path fill="#34a853" d="M3.5 20.4 13.2 12 3.5 3.6z" />
+                    <path fill="#fbbc04" d="M16.8 15.2 13.2 12l3.6-3.2 3.7 2.1c.8.5.8 1.7 0 2.2z" />
+                    <path fill="#4285f4" d="M3.5 20.4 16.8 15.2 13.2 12z" />
+                    <path fill="#ea4335" d="M3.5 3.6 13.2 12l3.6-3.2z" />
+                  </svg>
+                </span>
+                <span>
+                  <small data-i18n="store.soon">Yakında</small>
+                  <strong>Google Play</strong>
+                </span>
+              </button>
+            </div>
+            <p class="fine" data-i18n="hero.note">iOS ve Android yayınları hazırlanıyor.</p>
+          </div>
+
+          <figure class="preview">
+            <div class="phone">
+              <div class="phone-bar">
+                <img src="assets/icon.png" alt="" width="28" height="28" />
+                <span>KasaFON</span>
+              </div>
+              <p class="phone-label" data-i18n="mock.month">Ekim özeti</p>
+              <p class="phone-amount">₺24.500</p>
+              <p class="phone-caption" data-i18n="mock.balance">Örnek serbest nakit</p>
+              <div class="split">
+                <div>
+                  <span data-i18n="mock.income">Gelir</span>
+                  <strong>₺41.200</strong>
+                </div>
+                <div>
+                  <span data-i18n="mock.expense">Gider</span>
+                  <strong>₺16.700</strong>
+                </div>
+              </div>
+              <ul class="phone-list">
+                <li>
+                  <span data-i18n="mock.row1">Kira</span>
+                  <span>₺12.000</span>
+                </li>
+                <li>
+                  <span data-i18n="mock.row2">Market</span>
+                  <span>₺2.450</span>
+                </li>
+                <li>
+                  <span data-i18n="mock.row3">Kart ekstresi</span>
+                  <span>₺2.250</span>
+                </li>
+              </ul>
+            </div>
+            <figcaption data-i18n="mock.caption">Örnek ekran. Gerçek bakiyen değildir.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="trust" id="guven">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="trust.kicker">Güven</p>
+            <h2 data-i18n="trust.title">Ne yaptığımız kadar, ne yapmadığımız da net.</h2>
+          </div>
+          <div class="trust-grid">
+            <article>
+              <h3 data-i18n="trust.t1">Salt okunur bağlantı</h3>
+              <p data-i18n="trust.d1">
+                Hesap ve hareketler okunabilir. Bu bağlantı para gönderemez ve ödeme yapamaz.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="trust.t2">Kayıtlar sende</h3>
+              <p data-i18n="trust.d2">
+                Gelir, gider ve bütçe verileri varsayılan olarak cihazında durur. Yedek almak senin kararındır.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="trust.t3">Kart bilgisi yok</h3>
+              <p data-i18n="trust.d3">
+                Abonelik ödemesini Apple veya Google işler. KasaFON kart bilgine erişmez.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="trust.t4">Reklam için satılmaz</h3>
+              <p data-i18n="trust.d4">Finansal verileriniz üçüncü taraflara satılmaz ve reklam amacıyla kullanılmaz.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="ozellikler">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="features.kicker">Özellikler</p>
+            <h2 data-i18n="features.title">İhtiyacın kadar araç.</h2>
+            <p class="sub" data-i18n="features.lead">
+              Başlangıç planı günlük kaydı karşılar. Borç disiplini Artı'da, otomasyon ve raporlar Pro'da.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <span class="badge" data-i18n="plan.starter">Başlangıç</span>
+              <h3 data-i18n="f1.title">Gelir ve gider</h3>
+              <p data-i18n="f1.body">Manuel kayıt ve sade aylık özet.</p>
+            </article>
+            <article>
+              <span class="badge" data-i18n="plan.plus">Artı</span>
+              <h3 data-i18n="f2.title">Borç ve takvim</h3>
+              <p data-i18n="f2.body">Kart, kredi, taksit ve son ödeme hatırlatıcıları.</p>
+            </article>
+            <article>
+              <span class="badge" data-i18n="plan.plus">Artı</span>
+              <h3 data-i18n="f3.title">Bütçe ve hedef</h3>
+              <p data-i18n="f3.body">Kategori limitleri, birikim planı ve düzenli ödemeler.</p>
+            </article>
+            <article>
+              <span class="badge badge-pro" data-i18n="plan.pro">Pro</span>
+              <h3 data-i18n="f4.title">Nakit akışı</h3>
+              <p data-i18n="f4.body">Taksit ve ekstrelerle 24 aylık serbest nakit projeksiyonu.</p>
+            </article>
+            <article>
+              <span class="badge badge-pro" data-i18n="plan.pro">Pro</span>
+              <h3 data-i18n="f5.title">Ekstre aktarma</h3>
+              <p data-i18n="f5.body">Fotoğraf veya PDF üzerinden işlem içe aktarma.</p>
+            </article>
+            <article>
+              <span class="badge badge-pro" data-i18n="plan.pro">Pro</span>
+              <h3 data-i18n="f6.title">Varlık ve rapor</h3>
+              <p data-i18n="f6.body">Altın, döviz, hisse ve kripto takibi. PDF ve Excel çıktısı.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="plans" id="planlar">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="plans.kicker">Planlar</p>
+            <h2 data-i18n="plans.title">Sade üç paket.</h2>
+            <p class="sub" data-i18n="plans.lead">
+              Fiyatlar uygulama içi liste fiyatıdır. Mağaza yayınıyla birlikte kesinleşir.
+            </p>
+          </div>
+
+          <div class="billing" role="group" data-i18n-aria="plans.billingLabel">
+            <button type="button" data-billing="monthly" aria-pressed="false" data-i18n="plans.monthly">Aylık</button>
+            <button type="button" data-billing="yearly" aria-pressed="true" data-i18n="plans.yearly">Yıllık</button>
+          </div>
+          <p class="billing-note" data-i18n="plans.yearlyNote">Yıllık ödemede 2 ay hediye.</p>
+
+          <div class="plan-grid">
+            <article class="plan">
+              <h3 data-i18n="plan.starter">Başlangıç</h3>
+              <p class="plan-desc" data-i18n="starter.desc">Temel gelir ve gider kaydı.</p>
+              <p class="price"><span data-i18n="plans.free">Ücretsiz</span></p>
+              <ul>
+                <li data-i18n="starter.f1">Temel gelir / gider kaydı</li>
+                <li data-i18n="starter.f2">Aylık özet</li>
+                <li data-i18n="starter.f3">Cihazda yerel saklama</li>
+              </ul>
+            </article>
+
+            <article class="plan plan-popular">
+              <p class="popular" data-i18n="plans.popular">En popüler</p>
+              <h3 data-i18n="plan.plus">Artı</h3>
+              <p class="plan-desc" data-i18n="plus.desc">Borç, ödeme ve hedef disiplini.</p>
+              <p class="price">
+                <span data-price="plus">990 TL</span>
+                <small data-period>/ yıl</small>
+              </p>
+              <ul>
+                <li data-i18n="plus.f1">Borç ve kredi kartı takibi</li>
+                <li data-i18n="plus.f2">Ödeme takvimi ve hatırlatıcı</li>
+                <li data-i18n="plus.f3">Bütçe limitleri ve hedefler</li>
+                <li data-i18n="plus.f4">Düzenli ödeme planı</li>
+              </ul>
+            </article>
+
+            <article class="plan plan-pro">
+              <h3 data-i18n="plan.pro">Pro</h3>
+              <p class="plan-desc" data-i18n="pro.desc">Otomasyon, projeksiyon ve rapor.</p>
+              <p class="price">
+                <span data-price="pro">1.690 TL</span>
+                <small data-period>/ yıl</small>
+              </p>
+              <ul>
+                <li data-i18n="pro.f1">Salt okunur banka senkronu</li>
+                <li data-i18n="pro.f2">Ekstre ve fiş içe aktarma</li>
+                <li data-i18n="pro.f3">Varlık takibi ve nakit akışı</li>
+                <li data-i18n="pro.f4">PDF / Excel rapor ve AI özet</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="sss">
+        <div class="shell faq-wrap">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="faq.kicker">SSS</p>
+            <h2 data-i18n="faq.title">Kısa cevaplar.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary data-i18n="q1">Banka hesabımdan para çekebilir mi?</summary>
+              <p data-i18n="a1">
+                Hayır. Banka bağlantısı yalnızca okuma içindir. Transfer ve ödeme yapmaz.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="q2">Verilerim nereye gider?</summary>
+              <p data-i18n="a2">
+                Gelir, gider ve bütçe kayıtları varsayılan olarak cihazında kalır. Hesap açarsan e-posta adresin kimlik doğrulama için saklanır. Kart bilgin KasaFON'a gelmez.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="q3">Ücretsiz plan ne kapsar?</summary>
+              <p data-i18n="a3">
+                Temel gelir-gider kaydı ve aylık özet. Borç araçları, hedefler, banka bağlantısı ve raporlar üst planlardadır.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="q4">Uygulamayı nereden indireceğim?</summary>
+              <p data-i18n="a4">
+                App Store ve Google Play yayınları hazırlanıyor. Bağlantılar açıldığında bu sayfada yer alacak.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <img src="assets/wordmark.png" alt="KasaFON" width="128" height="24" />
+          <p data-i18n="footer.tag">Kişisel bütçe uygulaması.</p>
+        </div>
+        <ul>
+          <li>
+            <span data-i18n="footer.privacy">Gizlilik politikası</span>
+            <small data-i18n="footer.soon">Yakında</small>
+          </li>
+          <li>
+            <span data-i18n="footer.contact">İletişim</span>
+            <small data-i18n="footer.soon">Yakında</small>
+          </li>
+        </ul>
+        <p class="rights" data-i18n="footer.rights">© 2026 KasaFON</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
