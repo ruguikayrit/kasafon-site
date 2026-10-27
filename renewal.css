@@ -1,0 +1,83 @@
+:root {
+  --bg: #07111c;
+  --text: #f4f7fb;
+  --muted: #9aa6b2;
+  --teal: #00c8a0;
+  --line: rgba(255, 255, 255, 0.1);
+  --font: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(720px 380px at 50% 0%, rgba(0, 200, 160, 0.14), transparent 62%),
+    var(--bg);
+}
+img { display: block; }
+button { font: inherit; }
+
+.lang {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.lang button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.lang button[aria-pressed="true"] {
+  background: var(--text);
+  color: #07111c;
+}
+
+main {
+  width: min(560px, calc(100% - 48px));
+  text-align: center;
+  padding: 48px 0;
+}
+.logo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 22px;
+}
+.wordmark {
+  width: 210px;
+  height: auto;
+  margin: 0 auto 36px;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-weight: 680;
+}
+p {
+  margin: 16px auto 0;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
