@@ -1,16 +1,16 @@
 const copy = {
   tr: {
-    title: "KasaFON — Yenileniyoruz",
-    description: "Yenileniyoruz. KasaFON’u yeniliyoruz. Yeni haliyle çok yakında yeniden hizmetinizdeyiz.",
-    heading: "Yenileniyoruz.",
-    lead: "KasaFON’u yeniliyoruz. Yeni haliyle çok yakında yeniden hizmetinizdeyiz.",
+    title: "KasaFON — Yeni yüzüyle hazırlanıyor",
+    description: "KasaFON yeni yüzüyle hazırlanıyor. Kısa süre sonra buradayız.",
+    heading: "KasaFON yeni yüzüyle hazırlanıyor...",
+    lead: "Kısa süre sonra buradayız...",
     lang: "Dil"
   },
   en: {
-    title: "KasaFON — We’re renewing",
-    description: "We’re renewing. We are renewing KasaFON. The new version will be with you very soon.",
-    heading: "We’re renewing.",
-    lead: "We are renewing KasaFON. The new version will be with you very soon.",
+    title: "KasaFON — A new look is on the way",
+    description: "KasaFON is being prepared with a new look. We'll be here shortly.",
+    heading: "KasaFON is being prepared, with a new look...",
+    lead: "We'll be here shortly...",
     lang: "Language"
   }
 };
